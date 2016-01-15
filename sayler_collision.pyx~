@@ -6,45 +6,41 @@ import random
 import md5
 import hashlib
 x = 'dab676a07bd2b9ec55667c8b9b0f007c'; #output of 'echo -n at056r8PT | md5sum'
-a = x[:6]
-b = x[26:]
-c = a+b
-o = 0 
+a = x[:3]
+b = x[29:]
+c = a+b 
 print(datetime.now())
-class hash_collision: 
+#class hash_collision: 
    
-    def id_generator(self,chars=string.ascii_letters + string.digits):
-        y = ''.join(random.choice(chars) for _ in range(random.randint(1,10)))
-        return y
+def id_generator(chars=string.ascii_letters + string.digits):
+    y = ''.join(random.choice(chars) for _ in range(random.randint(1,10)))
+    return y
      
-    def partial_collision(self): 
+def partial_collision(id_generator): 
           
-        while True:
-            global o
-            l=self.id_generator()
-            k = hashlib.md5()
-            part = k.update(l)
-            tumbo = k.hexdigest()
-            if (tumbo[0] != x[0]):
-                o += 1
-                continue
-            else:
-                y = tumbo[:6]
-                '''if (y != b):
-                    o += 1
-                    continue'''
-                z = tumbo[26:]
-                zy = y+z  
-                if (c==zy):
-                    print('success')
-                    print(datetime.now())
-                    print ('at056r8PT',x,c)
-                    print (l,tumbo,zy)
-                    print('number of times the program was run is equal to %s') % o
-                    return
-     
-def main():
+    while True:
+         
+        l=self.id_generator()
+        k = hashlib.md5()
+        part = k.update(l)
+        tumbo = k.hexdigest()
+        if (tumbo[0] != x[0]):
+            continue
+        else:
+            y = tumbo[:3]
+            '''if (y != b):  
+                continue'''
+            z = tumbo[29:]
+            zy = y+z  
+            if (c==zy):
+                print('success')
+                print(datetime.now())
+                print ('at056r8PT',x,c)
+                print (l,tumbo,zy)
+                return
+partial_collision(id_generator(x))   
+'''def main():
     i = hash_collision()
     i.partial_collision()
-main()
+main()'''
 
