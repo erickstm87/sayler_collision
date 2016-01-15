@@ -453,7 +453,7 @@ struct __pyx_obj_16sayler_collision___pyx_scope_struct_1_genexpr;
 
 /* "sayler_collision.pyx":14
  * c = a+b
- * print(datetime.now())
+ * ll = print(datetime.now())
  * def partial_collision(chars):             # <<<<<<<<<<<<<<
  *     while True:
  *         chars=string.ascii_letters + string.digits
@@ -726,6 +726,7 @@ static char __pyx_k_x[] = "x";
 static char __pyx_k_y[] = "y";
 static char __pyx_k_z[] = "z";
 static char __pyx_k__2[] = "";
+static char __pyx_k_ll[] = "ll";
 static char __pyx_k_zy[] = "zy";
 static char __pyx_k_md5[] = "md5";
 static char __pyx_k_now[] = "now";
@@ -783,6 +784,7 @@ static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_join;
 static PyObject *__pyx_n_s_k;
 static PyObject *__pyx_n_s_l;
+static PyObject *__pyx_n_s_ll;
 static PyObject *__pyx_n_s_main;
 static PyObject *__pyx_n_s_math;
 static PyObject *__pyx_n_s_md5;
@@ -827,7 +829,7 @@ static PyObject *__pyx_codeobj__9;
 
 /* "sayler_collision.pyx":14
  * c = a+b
- * print(datetime.now())
+ * ll = print(datetime.now())
  * def partial_collision(chars):             # <<<<<<<<<<<<<<
  *     while True:
  *         chars=string.ascii_letters + string.digits
@@ -1047,7 +1049,7 @@ static PyObject *__pyx_gb_16sayler_collision_17partial_collision_2generator(__py
 
 /* "sayler_collision.pyx":14
  * c = a+b
- * print(datetime.now())
+ * ll = print(datetime.now())
  * def partial_collision(chars):             # <<<<<<<<<<<<<<
  *     while True:
  *         chars=string.ascii_letters + string.digits
@@ -1084,7 +1086,7 @@ static PyObject *__pyx_pf_16sayler_collision_partial_collision(CYTHON_UNUSED PyO
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_chars);
 
   /* "sayler_collision.pyx":15
- * print(datetime.now())
+ * ll = print(datetime.now())
  * def partial_collision(chars):
  *     while True:             # <<<<<<<<<<<<<<
  *         chars=string.ascii_letters + string.digits
@@ -1290,7 +1292,7 @@ static PyObject *__pyx_pf_16sayler_collision_partial_collision(CYTHON_UNUSED PyO
  *             y = tumbo[:3]
  *             z = tumbo[29:]             # <<<<<<<<<<<<<<
  *             zy = y+z
- *             print(zy)
+ *             #print(zy)
  */
       __pyx_t_2 = __Pyx_PyObject_GetSlice(__pyx_v_tumbo, 29, 0, NULL, NULL, &__pyx_slice__4, 1, 0, 1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 25; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_2);
@@ -1301,7 +1303,7 @@ static PyObject *__pyx_pf_16sayler_collision_partial_collision(CYTHON_UNUSED PyO
  *             y = tumbo[:3]
  *             z = tumbo[29:]
  *             zy = y+z             # <<<<<<<<<<<<<<
- *             print(zy)
+ *             #print(zy)
  *             if (c==zy):
  */
       __pyx_t_2 = PyNumber_Add(__pyx_v_y, __pyx_v_z); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 26; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -1309,124 +1311,126 @@ static PyObject *__pyx_pf_16sayler_collision_partial_collision(CYTHON_UNUSED PyO
       __Pyx_XDECREF_SET(__pyx_v_zy, __pyx_t_2);
       __pyx_t_2 = 0;
 
-      /* "sayler_collision.pyx":27
- *             z = tumbo[29:]
- *             zy = y+z
- *             print(zy)             # <<<<<<<<<<<<<<
- *             if (c==zy):
- *                 print('success')
- */
-      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 27; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_INCREF(__pyx_v_zy);
-      __Pyx_GIVEREF(__pyx_v_zy);
-      PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_zy);
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 27; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-      __Pyx_GOTREF(__pyx_t_4);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-
       /* "sayler_collision.pyx":28
  *             zy = y+z
- *             print(zy)
+ *             #print(zy)
  *             if (c==zy):             # <<<<<<<<<<<<<<
  *                 print('success')
- *                 print(datetime.now())
+ *                 print(ll)
  */
-      __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_c); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 28; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-      __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_2 = PyObject_RichCompare(__pyx_t_4, __pyx_v_zy, Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 28; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_5 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 28; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_c); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 28; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_4 = PyObject_RichCompare(__pyx_t_2, __pyx_v_zy, Py_EQ); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 28; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_5 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 28; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       if (__pyx_t_5) {
 
         /* "sayler_collision.pyx":29
- *             print(zy)
+ *             #print(zy)
  *             if (c==zy):
  *                 print('success')             # <<<<<<<<<<<<<<
+ *                 print(ll)
  *                 print(datetime.now())
- *                 print ('at056r8PT',x,c)
  */
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 29; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-        __Pyx_GOTREF(__pyx_t_2);
-        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 29; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __Pyx_GOTREF(__pyx_t_4);
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
         /* "sayler_collision.pyx":30
  *             if (c==zy):
  *                 print('success')
+ *                 print(ll)             # <<<<<<<<<<<<<<
+ *                 print(datetime.now())
+ *                 print ('at056r8PT',x,c)
+ */
+        __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_ll); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __Pyx_GOTREF(__pyx_t_4);
+        __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_GIVEREF(__pyx_t_4);
+        PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_4);
+        __pyx_t_4 = 0;
+        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __Pyx_GOTREF(__pyx_t_4);
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+
+        /* "sayler_collision.pyx":31
+ *                 print('success')
+ *                 print(ll)
  *                 print(datetime.now())             # <<<<<<<<<<<<<<
  *                 print ('at056r8PT',x,c)
  *                 print (l,tumbo,zy)
  */
-        __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_datetime); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-        __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_now); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_datetime); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_now); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_3);
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __pyx_t_4 = NULL;
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __pyx_t_2 = NULL;
         if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_3))) {
-          __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
-          if (likely(__pyx_t_4)) {
+          __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+          if (likely(__pyx_t_2)) {
             PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-            __Pyx_INCREF(__pyx_t_4);
+            __Pyx_INCREF(__pyx_t_2);
             __Pyx_INCREF(function);
             __Pyx_DECREF_SET(__pyx_t_3, function);
           }
         }
-        if (__pyx_t_4) {
-          __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        if (__pyx_t_2) {
+          __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         } else {
-          __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         }
-        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_3);
-        __Pyx_GIVEREF(__pyx_t_2);
-        PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
-        __pyx_t_2 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_GIVEREF(__pyx_t_4);
+        PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4);
+        __pyx_t_4 = 0;
+        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_3, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "sayler_collision.pyx":31
- *                 print('success')
+        /* "sayler_collision.pyx":32
+ *                 print(ll)
  *                 print(datetime.now())
  *                 print ('at056r8PT',x,c)             # <<<<<<<<<<<<<<
  *                 print (l,tumbo,zy)
  *                 return
  */
-        __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_x); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-        __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_c); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-        __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_4 = PyTuple_New(3); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_x); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 32; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_4);
+        __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_c); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 32; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 32; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __Pyx_GOTREF(__pyx_t_2);
         __Pyx_INCREF(__pyx_n_s_at056r8PT);
         __Pyx_GIVEREF(__pyx_n_s_at056r8PT);
-        PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_n_s_at056r8PT);
-        __Pyx_GIVEREF(__pyx_t_2);
-        PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_2);
+        PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_at056r8PT);
+        __Pyx_GIVEREF(__pyx_t_4);
+        PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_4);
         __Pyx_GIVEREF(__pyx_t_3);
-        PyTuple_SET_ITEM(__pyx_t_4, 2, __pyx_t_3);
-        __pyx_t_2 = 0;
+        PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_t_3);
+        __pyx_t_4 = 0;
         __pyx_t_3 = 0;
-        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 32; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_3);
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "sayler_collision.pyx":32
+        /* "sayler_collision.pyx":33
  *                 print(datetime.now())
  *                 print ('at056r8PT',x,c)
  *                 print (l,tumbo,zy)             # <<<<<<<<<<<<<<
  *                 return
  * partial_collision('whatever')
  */
-        __pyx_t_3 = PyTuple_New(3); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 32; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_3 = PyTuple_New(3); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 33; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_v_l);
         __Pyx_GIVEREF(__pyx_v_l);
@@ -1437,12 +1441,12 @@ static PyObject *__pyx_pf_16sayler_collision_partial_collision(CYTHON_UNUSED PyO
         __Pyx_INCREF(__pyx_v_zy);
         __Pyx_GIVEREF(__pyx_v_zy);
         PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_v_zy);
-        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_3, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 32; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-        __Pyx_GOTREF(__pyx_t_4);
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 33; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-        /* "sayler_collision.pyx":33
+        /* "sayler_collision.pyx":34
  *                 print ('at056r8PT',x,c)
  *                 print (l,tumbo,zy)
  *                 return             # <<<<<<<<<<<<<<
@@ -1455,10 +1459,10 @@ static PyObject *__pyx_pf_16sayler_collision_partial_collision(CYTHON_UNUSED PyO
 
         /* "sayler_collision.pyx":28
  *             zy = y+z
- *             print(zy)
+ *             #print(zy)
  *             if (c==zy):             # <<<<<<<<<<<<<<
  *                 print('success')
- *                 print(datetime.now())
+ *                 print(ll)
  */
       }
     }
@@ -1467,7 +1471,7 @@ static PyObject *__pyx_pf_16sayler_collision_partial_collision(CYTHON_UNUSED PyO
 
   /* "sayler_collision.pyx":14
  * c = a+b
- * print(datetime.now())
+ * ll = print(datetime.now())
  * def partial_collision(chars):             # <<<<<<<<<<<<<<
  *     while True:
  *         chars=string.ascii_letters + string.digits
@@ -1763,6 +1767,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_join, __pyx_k_join, sizeof(__pyx_k_join), 0, 0, 1, 1},
   {&__pyx_n_s_k, __pyx_k_k, sizeof(__pyx_k_k), 0, 0, 1, 1},
   {&__pyx_n_s_l, __pyx_k_l, sizeof(__pyx_k_l), 0, 0, 1, 1},
+  {&__pyx_n_s_ll, __pyx_k_ll, sizeof(__pyx_k_ll), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
   {&__pyx_n_s_math, __pyx_k_math, sizeof(__pyx_k_math), 0, 0, 1, 1},
   {&__pyx_n_s_md5, __pyx_k_md5, sizeof(__pyx_k_md5), 0, 0, 1, 1},
@@ -1828,18 +1833,18 @@ static int __Pyx_InitCachedConstants(void) {
  *             y = tumbo[:3]
  *             z = tumbo[29:]             # <<<<<<<<<<<<<<
  *             zy = y+z
- *             print(zy)
+ *             #print(zy)
  */
   __pyx_slice__4 = PySlice_New(__pyx_int_29, Py_None, Py_None); if (unlikely(!__pyx_slice__4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 25; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_slice__4);
   __Pyx_GIVEREF(__pyx_slice__4);
 
   /* "sayler_collision.pyx":29
- *             print(zy)
+ *             #print(zy)
  *             if (c==zy):
  *                 print('success')             # <<<<<<<<<<<<<<
+ *                 print(ll)
  *                 print(datetime.now())
- *                 print ('at056r8PT',x,c)
  */
   __pyx_tuple__5 = PyTuple_Pack(1, __pyx_n_s_success); if (unlikely(!__pyx_tuple__5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 29; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple__5);
@@ -1861,7 +1866,7 @@ static int __Pyx_InitCachedConstants(void) {
  * a = x[:3]
  * b = x[29:]             # <<<<<<<<<<<<<<
  * c = a+b
- * print(datetime.now())
+ * ll = print(datetime.now())
  */
   __pyx_slice__7 = PySlice_New(__pyx_int_29, Py_None, Py_None); if (unlikely(!__pyx_slice__7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 11; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_slice__7);
@@ -1869,7 +1874,7 @@ static int __Pyx_InitCachedConstants(void) {
 
   /* "sayler_collision.pyx":14
  * c = a+b
- * print(datetime.now())
+ * ll = print(datetime.now())
  * def partial_collision(chars):             # <<<<<<<<<<<<<<
  *     while True:
  *         chars=string.ascii_letters + string.digits
@@ -1879,13 +1884,13 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__8);
   __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(1, 0, 10, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_tom_Documents_collision_co, __pyx_n_s_partial_collision, 14, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 14; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "sayler_collision.pyx":34
+  /* "sayler_collision.pyx":35
  *                 print (l,tumbo,zy)
  *                 return
  * partial_collision('whatever')             # <<<<<<<<<<<<<<
  * 
  */
-  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_n_s_whatever); if (unlikely(!__pyx_tuple__10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 34; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_n_s_whatever); if (unlikely(!__pyx_tuple__10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 35; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
   __Pyx_RefNannyFinishContext();
@@ -2118,7 +2123,7 @@ PyMODINIT_FUNC PyInit_sayler_collision(void)
  * a = x[:3]
  * b = x[29:]             # <<<<<<<<<<<<<<
  * c = a+b
- * print(datetime.now())
+ * ll = print(datetime.now())
  */
   __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_x); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 11; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
@@ -2132,7 +2137,7 @@ PyMODINIT_FUNC PyInit_sayler_collision(void)
  * a = x[:3]
  * b = x[29:]
  * c = a+b             # <<<<<<<<<<<<<<
- * print(datetime.now())
+ * ll = print(datetime.now())
  * def partial_collision(chars):
  */
   __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_a); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 12; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -2149,7 +2154,7 @@ PyMODINIT_FUNC PyInit_sayler_collision(void)
   /* "sayler_collision.pyx":13
  * b = x[29:]
  * c = a+b
- * print(datetime.now())             # <<<<<<<<<<<<<<
+ * ll = print(datetime.now())             # <<<<<<<<<<<<<<
  * def partial_collision(chars):
  *     while True:
  */
@@ -2184,11 +2189,12 @@ PyMODINIT_FUNC PyInit_sayler_collision(void)
   __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 13; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ll, __pyx_t_3) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 13; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "sayler_collision.pyx":14
  * c = a+b
- * print(datetime.now())
+ * ll = print(datetime.now())
  * def partial_collision(chars):             # <<<<<<<<<<<<<<
  *     while True:
  *         chars=string.ascii_letters + string.digits
@@ -2198,15 +2204,15 @@ PyMODINIT_FUNC PyInit_sayler_collision(void)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_partial_collision, __pyx_t_3) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 14; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "sayler_collision.pyx":34
+  /* "sayler_collision.pyx":35
  *                 print (l,tumbo,zy)
  *                 return
  * partial_collision('whatever')             # <<<<<<<<<<<<<<
  * 
  */
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_partial_collision); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 34; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_partial_collision); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 35; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 34; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 35; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;

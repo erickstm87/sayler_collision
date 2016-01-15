@@ -10,7 +10,7 @@ x = 'dab676a07bd2b9ec55667c8b9b0f007c'; #output of 'echo -n at056r8PT | md5sum'
 a = x[:3]
 b = x[29:]
 c = a+b 
-print(datetime.now())
+ll = print(datetime.now())
 def partial_collision(chars): 
     while True:
         chars=string.ascii_letters + string.digits
@@ -24,9 +24,10 @@ def partial_collision(chars):
             y = tumbo[:3]
             z = tumbo[29:]
             zy = y+z 
-            print(zy) 
+            #print(zy) 
             if (c==zy):
                 print('success')
+                print(ll)
                 print(datetime.now())
                 print ('at056r8PT',x,c)
                 print (l,tumbo,zy)
