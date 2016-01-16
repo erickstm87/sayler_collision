@@ -345,28 +345,28 @@ body.cython { font-family: courier; font-size: 12; }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
 </pre><pre class="cython line score-5" onclick='toggleDiv(this)'>+<span class="">09</span>: x = 'dab676a07bd2b9ec55667c8b9b0f007c'; #output of 'echo -n at056r8PT | md5sum'</pre>
 <pre class='cython code score-5 '>  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_d, __pyx_n_s_x, __pyx_n_s_dab676a07bd2b9ec55667c8b9b0f007c) &lt; 0) <span class='error_goto'>{__pyx_filename = __pyx_f[0]; __pyx_lineno = 9; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
-</pre><pre class="cython line score-16" onclick='toggleDiv(this)'>+<span class="">10</span>: a = x[:3]</pre>
+</pre><pre class="cython line score-16" onclick='toggleDiv(this)'>+<span class="">10</span>: a = x[:6]</pre>
 <pre class='cython code score-16 '>  __pyx_t_2 = <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_n_s_x);<span class='error_goto'> if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 10; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
-  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetSlice</span>(__pyx_t_2, 0, 3, NULL, NULL, &amp;__pyx_slice__6, 0, 1, 1);<span class='error_goto'> if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 10; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
+  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetSlice</span>(__pyx_t_2, 0, 6, NULL, NULL, &amp;__pyx_slice__6, 0, 1, 1);<span class='error_goto'> if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 10; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_d, __pyx_n_s_a, __pyx_t_1) &lt; 0) <span class='error_goto'>{__pyx_filename = __pyx_f[0]; __pyx_lineno = 10; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
 /* … */
-  __pyx_slice__6 = <span class='py_c_api'>PySlice_New</span>(Py_None, __pyx_int_3, Py_None);<span class='error_goto'> if (unlikely(!__pyx_slice__6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 10; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
+  __pyx_slice__6 = <span class='py_c_api'>PySlice_New</span>(Py_None, __pyx_int_6, Py_None);<span class='error_goto'> if (unlikely(!__pyx_slice__6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 10; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_slice__6);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_slice__6);
-</pre><pre class="cython line score-16" onclick='toggleDiv(this)'>+<span class="">11</span>: b = x[29:]</pre>
+</pre><pre class="cython line score-16" onclick='toggleDiv(this)'>+<span class="">11</span>: b = x[26:]</pre>
 <pre class='cython code score-16 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_n_s_x);<span class='error_goto'> if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 11; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
-  __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetSlice</span>(__pyx_t_1, 29, 0, NULL, NULL, &amp;__pyx_slice__7, 1, 0, 1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 11; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
+  __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetSlice</span>(__pyx_t_1, 26, 0, NULL, NULL, &amp;__pyx_slice__7, 1, 0, 1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 11; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_d, __pyx_n_s_b, __pyx_t_2) &lt; 0) <span class='error_goto'>{__pyx_filename = __pyx_f[0]; __pyx_lineno = 11; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
 /* … */
-  __pyx_slice__7 = <span class='py_c_api'>PySlice_New</span>(__pyx_int_29, Py_None, Py_None);<span class='error_goto'> if (unlikely(!__pyx_slice__7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 11; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
+  __pyx_slice__7 = <span class='py_c_api'>PySlice_New</span>(__pyx_int_26, Py_None, Py_None);<span class='error_goto'> if (unlikely(!__pyx_slice__7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 11; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_slice__7);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_slice__7);
 </pre><pre class="cython line score-17" onclick='toggleDiv(this)'>+<span class="">12</span>: c = a+b</pre>
@@ -790,23 +790,23 @@ static PyObject *__pyx_gb_16sayler_collision_17partial_collision_2generator(__py
 </pre><pre class="cython line score-0" onclick='toggleDiv(this)'>+<span class="">22</span>:             continue</pre>
 <pre class='cython code score-0 '>      goto __pyx_L3_continue;
 </pre><pre class="cython line score-0">&#xA0;<span class="">23</span>:         else:</pre>
-<pre class="cython line score-8" onclick='toggleDiv(this)'>+<span class="">24</span>:             y = tumbo[:3]</pre>
+<pre class="cython line score-8" onclick='toggleDiv(this)'>+<span class="">24</span>:             y = tumbo[:6]</pre>
 <pre class='cython code score-8 '>    /*else*/ {
-      __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetSlice</span>(__pyx_v_tumbo, 0, 3, NULL, NULL, &amp;__pyx_slice__3, 0, 1, 1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 24; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
+      __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetSlice</span>(__pyx_v_tumbo, 0, 6, NULL, NULL, &amp;__pyx_slice__3, 0, 1, 1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 24; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
       <span class='pyx_macro_api'>__Pyx_XDECREF_SET</span>(__pyx_v_y, __pyx_t_2);
       __pyx_t_2 = 0;
 /* … */
-  __pyx_slice__3 = <span class='py_c_api'>PySlice_New</span>(Py_None, __pyx_int_3, Py_None);<span class='error_goto'> if (unlikely(!__pyx_slice__3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 24; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
+  __pyx_slice__3 = <span class='py_c_api'>PySlice_New</span>(Py_None, __pyx_int_6, Py_None);<span class='error_goto'> if (unlikely(!__pyx_slice__3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 24; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_slice__3);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_slice__3);
-</pre><pre class="cython line score-8" onclick='toggleDiv(this)'>+<span class="">25</span>:             z = tumbo[29:]</pre>
-<pre class='cython code score-8 '>      __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetSlice</span>(__pyx_v_tumbo, 29, 0, NULL, NULL, &amp;__pyx_slice__4, 1, 0, 1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 25; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
+</pre><pre class="cython line score-8" onclick='toggleDiv(this)'>+<span class="">25</span>:             z = tumbo[26:]</pre>
+<pre class='cython code score-8 '>      __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetSlice</span>(__pyx_v_tumbo, 26, 0, NULL, NULL, &amp;__pyx_slice__4, 1, 0, 1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 25; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
       <span class='pyx_macro_api'>__Pyx_XDECREF_SET</span>(__pyx_v_z, __pyx_t_2);
       __pyx_t_2 = 0;
 /* … */
-  __pyx_slice__4 = <span class='py_c_api'>PySlice_New</span>(__pyx_int_29, Py_None, Py_None);<span class='error_goto'> if (unlikely(!__pyx_slice__4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 25; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
+  __pyx_slice__4 = <span class='py_c_api'>PySlice_New</span>(__pyx_int_26, Py_None, Py_None);<span class='error_goto'> if (unlikely(!__pyx_slice__4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 25; __pyx_clineno = __LINE__; goto __pyx_L1_error;}</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_slice__4);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_slice__4);
 </pre><pre class="cython line score-6" onclick='toggleDiv(this)'>+<span class="">26</span>:             zy = y+z</pre>
