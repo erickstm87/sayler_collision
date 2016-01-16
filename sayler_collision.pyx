@@ -7,10 +7,10 @@ import md5
 import hashlib
 import math
 x = 'dab676a07bd2b9ec55667c8b9b0f007c'; #output of 'echo -n at056r8PT | md5sum'
-a = x[:3]
-b = x[29:]
+a = x[:6]
+b = x[26:]
 c = a+b 
-ll = print(datetime.now())
+print(datetime.now())
 def partial_collision(chars): 
     while True:
         chars=string.ascii_letters + string.digits
@@ -21,8 +21,8 @@ def partial_collision(chars):
         if (tumbo[0] != x[0]):
             continue
         else:
-            y = tumbo[:3]
-            z = tumbo[29:]
+            y = tumbo[:6]
+            z = tumbo[26:]
             zy = y+z 
             #print(zy) 
             if (c==zy):
