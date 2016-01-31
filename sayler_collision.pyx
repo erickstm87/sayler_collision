@@ -6,11 +6,14 @@ import random
 import md5
 import hashlib
 import math
+import datetime
+
 x = 'dab676a07bd2b9ec55667c8b9b0f007c'; #output of 'echo -n at056r8PT | md5sum'
 a = x[:3]
 b = x[29:]
 c = a+b 
-print(datetime.now())
+r = datetime.datetime.now()
+print(r)
 def partial_collision(chars): 
     while True:
         chars=string.ascii_letters + string.digits
@@ -28,9 +31,16 @@ def partial_collision(chars):
             if (c==zy):
                 print('success')
                 print(l)
+<<<<<<< HEAD
                 print(datetime.now())
+=======
+                s = datetime.datetime.now()
+                print(s)
+                time_delta = s - r
+>>>>>>> 865f1a699a574c469ce9ecaac3753783715ff8b9
                 print ('at056r8PT',x,c)
                 print (l,tumbo,zy)
+                print ('the time it took to find this was %s' % time_delta)
                 return
 partial_collision('whatever')   
 
