@@ -31,6 +31,7 @@ def partial_collision(chars):
             if (c==zy):
                 print('success')
                 print(l)
+                print(r)
                 s = datetime.datetime.now()
                 print(s)
                 time_delta = s - r
