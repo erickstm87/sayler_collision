@@ -31,13 +31,9 @@ def partial_collision(chars):
             if (c==zy):
                 print('success')
                 print(l)
-<<<<<<< HEAD
-                print(datetime.now())
-=======
                 s = datetime.datetime.now()
                 print(s)
                 time_delta = s - r
->>>>>>> 865f1a699a574c469ce9ecaac3753783715ff8b9
                 print ('at056r8PT',x,c)
                 print (l,tumbo,zy)
                 print ('the time it took to find this was %s' % time_delta)
