@@ -15,6 +15,7 @@ c = a+b
 r = datetime.datetime.now()
 print(r)
 def partial_collision(chars): 
+    x = 0
     while True:
         chars=string.ascii_letters + string.digits
         l = ''.join(random.choice(chars) for _ in range(random.randint(1,10)))
@@ -27,7 +28,9 @@ def partial_collision(chars):
             y = tumbo[:3]
             z = tumbo[29:]
             zy = y+z 
-            print(zy) 
+            x += 1
+            print(x)
+            #print(zy) 
             if (c==zy):
                 print('success')
                 print(l)
@@ -38,6 +41,7 @@ def partial_collision(chars):
                 print ('at056r8PT',x,c)
                 print (l,tumbo,zy)
                 print ('the time it took to find this was %s' % time_delta)
+                print ('this was run %s times' % x)
                 return
 partial_collision('whatever')   
 
