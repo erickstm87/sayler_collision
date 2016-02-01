@@ -29,7 +29,7 @@ def partial_collision(chars):
             z = tumbo[29:]
             zy = y+z 
             x += 1
-            print(x)
+            #print(x)
             #print(zy) 
             if (c==zy):
                 print('success')
